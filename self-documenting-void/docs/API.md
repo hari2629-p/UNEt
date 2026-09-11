@@ -1,6 +1,6 @@
-# Immutable Zero Cost Pipeline — API Specification
+# High Assurance Distributed Ecosystem — API Specification
 
-> *Deterministic Quiescent Interface Specification — Generation 3*
+> *Deterministic Quiescent Interface Specification — Generation 6*
 
 ## Overview
 
@@ -29,7 +29,7 @@ Content-Type: application/json
 ```json
 {
   "status": "success",
-  "engine": "Elastic Fabric Engine",
+  "engine": "Deterministic Subsystem Engine",
   "mode": "quiescent",
   "operations_performed": 0,
   "result": null
@@ -51,8 +51,8 @@ GET /api/v1/void/status
 {
   "status": "operational",
   "health": "optimal",
-  "generation": 3,
-  "architecture": "Strategic Orchestration Architecture",
+  "generation": 6,
+  "architecture": "Immutable Apparatus Architecture",
   "meaningful_operations": 0,
   "business_value": 0.0
 }
@@ -71,13 +71,13 @@ GET /api/v1/void/metrics
 #### Response (`200 OK`)
 ```json
 {
-  "total_files": 32,
-  "python_modules": 20,
-  "functions": 6,
+  "total_files": 34,
+  "python_modules": 22,
+  "functions": 12,
   "classes": 13,
-  "graph_nodes": 108,
-  "graph_edges": 151,
-  "operational_efficiency": 46.6,
+  "graph_nodes": 117,
+  "graph_edges": 162,
+  "operational_efficiency": 46.15,
   "enterprise_readiness": 82.5,
   "meaningful_operations": 0
 }
@@ -91,6 +91,11 @@ The following public functions were discovered in the codebase via AST parsing b
 
 | Function | Module Location | Arguments | Return Type | Docstring Summary |
 |:---|:---|:---|:---:|:---|
+| `cli()` | `void/cli.py` | `()` | `None` | Void - Self-Documenting Enterprise Inactivity Platform. |
+| `analyze()` | `void/cli.py` | `()` | `None` | Run static AST analysis and inspect topological metrics. |
+| `generate()` | `void/cli.py` | `()` | `None` | Generate enterprise documentation suite and advance generation state. |
+| `serve()` | `void/cli.py` | `(host, port, debug)` | `None` | Start the interactive Void web dashboard. |
+| `status()` | `void/cli.py` | `()` | `None` | Display operational status, current generation, and verified metrics. |
 | `execute()` | `void/main.py` | `()` | `None` | Execute the core Void processing pipeline. |
 | `initialize()` | `void/main.py` | `()` | `dict[str, Any]` | Perform enterprise-grade null-state bootstrapping. |
 | `get_status()` | `void/main.py` | `()` | `dict[str, Any]` | Return current operational status metrics. |

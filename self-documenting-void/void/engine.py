@@ -66,12 +66,14 @@ class VoidEngine:
         drift = float(last_record.get("drift", 0.0))
 
         return {
+            "status": "operational",
             "generation": self.state_manager.generation,
             "primary_term": primary_term,
             "metrics": last_metrics,
             "drift": drift,
             "functional_drift": 0.0,
             "meaningful_operations": 0,
+            "last_updated": self.state_manager.updated_at,
         }
 
     def generate(
@@ -91,9 +93,9 @@ class VoidEngine:
             line = f"{step:.<27} {status_text}"
             if progress_callback is not None:
                 try:
-                    progress_callback(step, status_text)
-                except TypeError:
                     progress_callback(line)
+                except TypeError:
+                    progress_callback(step, status_text)
             else:
                 print(line)
 

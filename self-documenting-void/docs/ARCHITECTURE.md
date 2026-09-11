@@ -1,10 +1,10 @@
-# Strategic Orchestration Architecture
+# Immutable Apparatus Architecture
 
-> *Topological Specification and Component Telemetry - Generation 3*
+> *Topological Specification and Component Telemetry - Generation 6*
 
 ## System Overview
 
-The **Strategic Orchestration Architecture** formalizes the structural boundaries and directional data flows sustaining the Void's intentional null-state equilibrium. Orchestrated by the **Elastic Fabric Engine**, the topology maintains deterministic quiescence across all integrated planes.
+The **Immutable Apparatus Architecture** formalizes the structural boundaries and directional data flows sustaining the Void's intentional null-state equilibrium. Orchestrated by the **Deterministic Subsystem Engine**, the topology maintains deterministic quiescence across all integrated planes.
 
 ## Component Topology
 
