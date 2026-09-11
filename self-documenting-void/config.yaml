@@ -1,0 +1,20 @@
+project:
+  name: "VoidCore"
+  tagline: "Enterprise-grade infrastructure for operationalizing intentional inactivity"
+  version: "0.1.0"
+ignore:
+  - ".git"
+  - ".venv"
+  - "venv"
+  - "__pycache__"
+  - "node_modules"
+  - ".void"
+  - ".pytest_cache"
+  - "*.pyc"
+  - ".mypy_cache"
+dashboard:
+  host: "127.0.0.1"
+  port: 5000
+  debug: false
+generation:
+  max_history: 50
